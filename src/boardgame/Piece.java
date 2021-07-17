@@ -12,7 +12,8 @@ public class Piece {
 		position = null;
 	}
 	
-	public Board getBoard() {
+	// para ser acessível apenas na camada de tabueleiro e sublclasses (Piece vai gerar cavalo, peao, etc)
+	protected Board getBoard() {
 		return board;
 	}
 	
