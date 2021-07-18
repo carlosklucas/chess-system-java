@@ -12,22 +12,26 @@ public class Board {
 		pieces = new Piece[rows][columns];
 	}
 
-	private int getRows() {
+	public int getRows() {
 		return rows;
 	}
 
-	private void setRows(int rows) {
+	public void setRows(int rows) {
 		this.rows = rows;
 	}
 
-	private int getColumns() {
+	public int getColumns() {
 		return columns;
 	}
 
-	private void setColumns(int columns) {
+	public void setColumns(int columns) {
 		this.columns = columns;
 	}
 
+	public Piece piece(int row, int column) {
+		return pieces[row][column];
+	}
 	
-
+	
+	
 }
