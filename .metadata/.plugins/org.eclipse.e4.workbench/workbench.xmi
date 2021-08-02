@@ -11,6 +11,7 @@
     <persistedState key="workingSets" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workingSets/>"/>
     <persistedState key="aggregateWorkingSetId" value="Aggregate for window 1615567343690"/>
     <tags>topLevel</tags>
+    <tags>shellMaximized</tags>
     <children xsi:type="basic:PartSashContainer" xmi:id="_-NEzonRpEeufJK39HbrTYA" selectedElement="_-NEzo3RpEeufJK39HbrTYA" horizontal="true">
       <children xsi:type="advanced:PerspectiveStack" xmi:id="_-NEzo3RpEeufJK39HbrTYA" elementId="org.eclipse.ui.ide.perspectivestack" containerData="7500" selectedElement="_-NEzpHRpEeufJK39HbrTYA">
         <children xsi:type="advanced:Perspective" xmi:id="_-NEzpHRpEeufJK39HbrTYA" elementId="org.eclipse.jst.j2ee.J2EEPerspective" selectedElement="_qGO00INJEeumFvnYxZNKoQ" label="Java EE" iconURI="platform:/plugin/org.eclipse.jst.j2ee.ui/icons/full/cview16/j2ee_perspective.gif">
@@ -100,10 +101,11 @@
                   <tags>categoryTag:Java Browsing</tags>
                 </children>
               </children>
-              <children xsi:type="basic:PartSashContainer" xmi:id="_-NEzq3RpEeufJK39HbrTYA" containerData="8464" selectedElement="_-NEzsnRpEeufJK39HbrTYA">
-                <children xsi:type="basic:PartSashContainer" xmi:id="_-NEzrHRpEeufJK39HbrTYA" containerData="7000" horizontal="true">
+              <children xsi:type="basic:PartSashContainer" xmi:id="_-NEzq3RpEeufJK39HbrTYA" containerData="8464" selectedElement="_-NEzrHRpEeufJK39HbrTYA">
+                <children xsi:type="basic:PartSashContainer" xmi:id="_-NEzrHRpEeufJK39HbrTYA" containerData="7000" selectedElement="_-NEzrnRpEeufJK39HbrTYA" horizontal="true">
                   <children xsi:type="advanced:Placeholder" xmi:id="_-NEzrXRpEeufJK39HbrTYA" elementId="org.eclipse.ui.editorss" containerData="7000" ref="_-NGCLnRpEeufJK39HbrTYA"/>
-                  <children xsi:type="basic:PartStack" xmi:id="_-NEzrnRpEeufJK39HbrTYA" elementId="topRight" containerData="3000" selectedElement="_-NEzr3RpEeufJK39HbrTYA">
+                  <children xsi:type="basic:PartStack" xmi:id="_-NEzrnRpEeufJK39HbrTYA" elementId="topRight" visible="false" containerData="3000" selectedElement="_-NEzr3RpEeufJK39HbrTYA">
+                    <tags>Minimized</tags>
                     <children xsi:type="advanced:Placeholder" xmi:id="_-NEzr3RpEeufJK39HbrTYA" elementId="org.eclipse.ui.views.ContentOutline" ref="_-NGo0XRpEeufJK39HbrTYA" closeable="true">
                       <tags>View</tags>
                       <tags>categoryTag:General</tags>
@@ -257,14 +259,26 @@
     <sharedElements xsi:type="basic:Part" xmi:id="_-NGCYXRpEeufJK39HbrTYA" elementId="org.eclipse.ui.views.PropertySheet" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Properties" iconURI="platform:/plugin/org.eclipse.ui.views/icons/full/eview16/prop_ps.png" tooltip="" closeable="true">
       <persistedState key="originalCompatibilityViewClass" value="org.eclipse.ui.views.properties.PropertySheet"/>
       <persistedState key="originalCompatibilityViewBundle" value="org.eclipse.ui.views"/>
+      <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view/>"/>
       <tags>View</tags>
       <tags>categoryTag:General</tags>
+      <menus xmi:id="_R3_RsPOjEeuElcg7ZxKLyw" elementId="org.eclipse.ui.views.PropertySheet">
+        <tags>ViewMenu</tags>
+        <tags>menuContribution:menu</tags>
+      </menus>
+      <toolbar xmi:id="_R3_RsfOjEeuElcg7ZxKLyw" elementId="org.eclipse.ui.views.PropertySheet" visible="false"/>
     </sharedElements>
     <sharedElements xsi:type="basic:Part" xmi:id="_-NGCYnRpEeufJK39HbrTYA" elementId="org.eclipse.wst.server.ui.ServersView" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Servers" iconURI="platform:/plugin/org.eclipse.wst.server.ui/icons/cview16/servers_view.gif" tooltip="" closeable="true">
       <persistedState key="originalCompatibilityViewClass" value="org.eclipse.wst.server.ui.internal.cnf.ServersView2"/>
       <persistedState key="originalCompatibilityViewBundle" value="org.eclipse.wst.server.ui"/>
+      <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view CommonNavigator.LINKING_ENABLED=&quot;0&quot;>&#xD;&#xA;&lt;lastRecentlyUsedFilters/>&#xD;&#xA;&lt;/view>"/>
       <tags>View</tags>
       <tags>categoryTag:Server</tags>
+      <menus xmi:id="_RmiVUPOjEeuElcg7ZxKLyw" elementId="org.eclipse.wst.server.ui.ServersView">
+        <tags>ViewMenu</tags>
+        <tags>menuContribution:menu</tags>
+      </menus>
+      <toolbar xmi:id="_RmiVUfOjEeuElcg7ZxKLyw" elementId="org.eclipse.wst.server.ui.ServersView" visible="false"/>
     </sharedElements>
     <sharedElements xsi:type="basic:Part" xmi:id="_-NGCY3RpEeufJK39HbrTYA" elementId="org.eclipse.datatools.connectivity.DataSourceExplorerNavigator" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Data Source Explorer" iconURI="platform:/plugin/org.eclipse.datatools.connectivity.ui.dse/icons/full/cview16/enterprise_explorer.gif" tooltip="" closeable="true">
       <persistedState key="originalCompatibilityViewClass" value="org.eclipse.datatools.connectivity.ui.dse.views.DataSourceExplorerView"/>
@@ -351,7 +365,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_-NGo4XRpEeufJK39HbrTYA" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_gp_j4INJEeumFvnYxZNKoQ" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_-NPM13RpEeufJK39HbrTYA"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_ORazoPOjEeuElcg7ZxKLyw" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_-NPM13RpEeufJK39HbrTYA"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_-NGo7nRpEeufJK39HbrTYA" elementId="group.edit" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -385,7 +399,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_-NGpR3RpEeufJK39HbrTYA" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_gqEcaINJEeumFvnYxZNKoQ" elementId="org.eclipse.ui.window.pinEditor" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" enabled="false" type="Check" command="_-NPMenRpEeufJK39HbrTYA"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_ORazrfOjEeuElcg7ZxKLyw" elementId="org.eclipse.ui.window.pinEditor" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" enabled="false" type="Check" command="_-NPMenRpEeufJK39HbrTYA"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_-NGpUXRpEeufJK39HbrTYA" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -433,7 +447,12 @@
         <tags>Draggable</tags>
       </children>
     </trimBars>
-    <trimBars xmi:id="_-NGpc3RpEeufJK39HbrTYA" elementId="org.eclipse.ui.trim.vertical2" contributorURI="platform:/plugin/org.eclipse.platform" side="Right"/>
+    <trimBars xmi:id="_-NGpc3RpEeufJK39HbrTYA" elementId="org.eclipse.ui.trim.vertical2" contributorURI="platform:/plugin/org.eclipse.platform" side="Right">
+      <children xsi:type="menu:ToolControl" xmi:id="_jwQ60POjEeuElcg7ZxKLyw" elementId="topRight(IDEWindow).(org.eclipse.jst.j2ee.J2EEPerspective)" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.TrimStack">
+        <tags>TrimStack</tags>
+        <tags>Draggable</tags>
+      </children>
+    </trimBars>
   </children>
   <bindingTables xmi:id="_-NGpdHRpEeufJK39HbrTYA" contributorURI="platform:/plugin/org.eclipse.platform" bindingContext="_-NH3-3RpEeufJK39HbrTYA">
     <bindings xmi:id="_-NGpdXRpEeufJK39HbrTYA" keySequence="CTRL+1" command="_-NOkynRpEeufJK39HbrTYA"/>
