@@ -1,30 +1,35 @@
 package application;
 
+import java.awt.print.Printable;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
+import javax.swing.text.DefaultEditorKit.CutAction;
+
+import boardgame.Board;
+import boardgame.Position;
 import chess.ChessException;
 import chess.ChessMatch;
 import chess.ChessPiece;
 import chess.ChessPosition;
-
+ 
 public class Program {
 
 	public static void main(String[] args) {
-
-		/*Position pos = new Position(3,5);
+		
+		Position pos = new Position(3,5);
 		System.out.println(pos);
 
 		Board board = new Board(8, 8);
-		System.out.println(pos);*/
-
+		System.out.println(pos);
+		
 		Scanner sc = new Scanner(System.in);
 		ChessMatch chessMatch = new ChessMatch();
 
 		while(true) {
 
 			try {
-				UI.clearScreen();
+				UI.clearScreen(); 
 				UI.printBoard(chessMatch.getPieces());
 				System.out.println();
 				System.out.print("Source: ");
@@ -46,4 +51,24 @@ public class Program {
 			}
 		}
 	}
+
+	private static String cutIntegerLeft(String numStr, int digitLimit) {
+		if(numStr.length() > digitLimit) {
+			return "" + Long.parseLong(numStr, 10) % (int) Math.pow(10,  digitLimit);
+			}
+		return numStr;
+	}
+	
+
+		/*
+			System.out.println(cutIntegerLeft("600000", 5));
+		System.out.println(cutIntegerLeftTwo("600000", 5));
+	
+	private static String cutIntegerLeftTwo(String numStr, int digitLimit) {
+		if(numStr.length() > digitLimit) {
+			return numStr.substring(numStr.length() - digitLimit, numStr.length());
+			}
+		return numStr;
+	}*/
+	
 }

@@ -19,6 +19,8 @@ public abstract class Piece {
 	
 	public abstract boolean[][] possibleMoves();
 	
+	//hook method: método concreto que usa um método abstracto
+	//método que depende dum método abstracto, existe templates com padrão de implementação
 	public boolean possibleMove(Position position) {
 		return possibleMoves()[position.getRow()][position.getColumn()];
 	}
@@ -32,7 +34,7 @@ public abstract class Piece {
 					return true;
 					}
 				}
-		}
+		} 
 		return false;
 	}
 
