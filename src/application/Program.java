@@ -1,10 +1,7 @@
 package application;
 
-import java.awt.print.Printable;
 import java.util.InputMismatchException;
 import java.util.Scanner;
-
-import javax.swing.text.DefaultEditorKit.CutAction;
 
 import boardgame.Board;
 import boardgame.Position;
@@ -30,7 +27,7 @@ public class Program {
 
 			try {
 				UI.clearScreen(); 
-				UI.printBoard(chessMatch.getPieces());
+				UI.printMatch(chessMatch);
 				System.out.println();
 				System.out.print("Source: ");
 				ChessPosition source = UI.readChessPosition(sc);
